@@ -1,12 +1,34 @@
-# React + Vite
+# Employee Management System (EMS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The **Employee Management System (EMS)** is a web-based application that helps organizations manage employee data efficiently. It provides features for adding, updating, viewing, and deleting employee records, as well as managing tasks and priorities.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 👨‍💼 **Employee Management**
+  - Add new employees with unique Employee ID.
+  - Update employee details like name, department, role, and contact info.
+  - Delete employee records when needed.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 📋 **Task Management**
+  - Assign tasks to employees.
+  - Priority system:
+    - 🔴 **High Priority** = Red  
+    - 🟡 **Medium Priority** = Yellow  
+    - 🟢 **Low Priority** = Green  
+
+- 📊 **Dashboard**
+  <!-- - View employee details in a clean, searchable table. -->
+  - Highlight tasks based on priority.
+  - Simple and responsive UI for easy navigation.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React, Tailwind CSS  
+<!-- - **Backend:** Node.js, Express.js  
+- **Database:** MongoDB   -->
+- **Version Control:** Git & GitHub  
+
