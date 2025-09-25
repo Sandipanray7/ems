@@ -13,15 +13,15 @@ const Login = () => {
 
   return (
     <div className="flex h-screen w-screen justify-center items-center">
-      <div className="border-2 border-purple-600 p-5 rounded-lg">
+      <div className="border-2 border-purple-600 p-7 h-[37%] w-[30%] rounded-lg">
         <form
           onSubmit={submitHandeler}
-          className="flex flex-col gap-3 items-center justify-center"
+          className="flex flex-col gap-5 items-center justify-center"
         >
           <input
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-            className="border-2 outline-none border-purple-600 rounded-lg"
+            className="border-2 w-full outline-none border-purple-600 rounded-lg"
             style={{ padding: "2%", margin: "2%" }}
             type="email"
             placeholder="Enter your email"
@@ -31,7 +31,7 @@ const Login = () => {
           <input
           value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="border-2 outline-none border-purple-600 rounded-lg"
+            className="border-2 w-full outline-none border-purple-600  rounded-lg"
             style={{ padding: "2%", margin: "2%" }}
             type="password"
             placeholder="Enter your password"
@@ -40,7 +40,7 @@ const Login = () => {
           <button
             className="rounded-full"
             style={{ backgroundColor: "purple", width: "60%", height: "35px" }}
-          >
+          > Login
           </button>
         </form>
       </div>

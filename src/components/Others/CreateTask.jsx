@@ -2,7 +2,7 @@ import React from 'react'
 
 const CreateTask = () => {
   return (
-    <div className='p-4'>
+    <div className='p-4 rounded bg-stone-800'>
         <form>
             <h3 className='text-semibold mt-2'>Task Title</h3>
             <input type="text" placeholder='Enter a title' className="border-none outline-none bg-neutral-600 w-full px-3 py-2 mt-2 rounded-lg " />

@@ -2,9 +2,12 @@
 
 body{
   color: white;
-  background-color: #111;
+  background-color: #0e0e0e;
 }
 
 #tasklist::-webkit-scrollbar{
+  display:none;
+}
+#alltaskdiv::-webkit-scrollbar{
   display:none;
 }
