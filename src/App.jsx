@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Login from './components/Auth/login'
 import EmployeeDashboard from './components/Dashboard/EmployeeDashboard'
 import AdminDashboard from './components/Dashboard/AdminDashboard'
 import { setLocalStorage } from './utils/LocalStorage'
+import {AuthContext} from './context/AuthProvider'
 
 const App = () => {
   // useEffect(() => {
@@ -11,13 +12,14 @@ const App = () => {
 
   const [user,setUser]=useState(null)
   
+  const authData= useContext(AuthContext)
+  
   const handelLogin=(email,password)=>{
     if(email==="admin@gmail.com" && password==='1234'){
       setUser('admin')
-      console.log(user)
-    }else if(email==="user@gmail.com" && password==='1234'){
+     
+    }else if(authData && authData.employee.some(emp=>emp.email===email && emp.password===password)){
       setUser("employee")
-      console.log(user)
     } 
     else{
       alert('login failed')
